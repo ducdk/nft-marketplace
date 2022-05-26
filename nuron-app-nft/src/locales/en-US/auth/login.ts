@@ -1,0 +1,25 @@
+export const enUS_login = {
+  'auth.login.title': 'Sign in to your account',
+  'auth.login.label.email': 'Email',
+  'auth.login.label.password': 'Password',
+  'auth.login.label.code': 'Code',
+  'auth.login.label.phone': 'Phone Number',
+  'auth.login.message.require.email': 'Please type the email!',
+  'auth.login.message.pattern.email': 'Please enter a valid email address!',
+  'auth.login.message.require.password': 'Please type the password!',
+  'auth.login.message.pattern.password':
+    'Password consists of 8 characters, 1 uppercase letter, 1 number and 1 special character!',
+  'auth.login.message.require.phone': 'Please type the phone!',
+  'auth.login.message.pattern.phone': 'Please enter a valid phone!',
+  'auth.login.message.require.code': 'Please type the code!',
+  'auth.login.content.forgot_password': 'Login by email',
+  'auth.login.content.change.byphone': 'Login by phone',
+  'auth.login.button.submit': 'LOGIN',
+  'auth.login.button.send': 'SEND CODE',
+  'auth.login.button.resend': 'RESEND',
+  'auth.login.button.verify': 'Verify',
+  'auth.login.button.verify.failed': 'Wrong Code',
+  'auth.login.button.loginphone.failed': 'The phone number does not exist!',
+  'auth.login.button.info': "Don't have an account?",
+  'auth.login.button.signup': 'Sign up now!'
+};

@@ -1,0 +1,39 @@
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/npm",
+      {
+        "tarballDir": "release",
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "bash scripts/release.sh ${nextRelease.version}"
+      }
+    ],
+    "@semantic-release/gitlab",
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "package-lock.json", "package.json", "VERSION.txt"],
+        "message": "chore(release): ${nextRelease.version} [skip release]\n\n${nextRelease.notes}"
+      }
+    ]
+  ],
+  "branches": [
+    "main",
+    {
+      "name": "release",
+      "prerelease": true
+    },
+    {
+      "name": "development",
+      "prerelease": true
+    }
+  ]
+}
